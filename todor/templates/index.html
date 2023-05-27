@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{%block title%}Inicio{%endblock%}
+
+{%block content%}
+
+    <!--inicio del contenido-->
+    <div class="container-sm text-center">
+        <h1 class="display-3">
+            Bienvenido a tu lista  de tareas por hacer
+        </h1>
+
+        <p class="lead">
+            en esta aplicacion puedes registrar tus tareas pendientes y tener una vista general de tus
+            responsabilidades.
+        </p>
+
+        <hr class="my-4">
+
+        <p>
+            ¿ tienes cuenta ?
+        </p>
+
+        <div class="d-flex justify-content-center">
+            <a href="{{url_for('auth.login')}}" class="btn btn-primary mx-2">Iniciar sesion</a>
+            <a href="{{url_for('auth.register')}}" class="btn btn-secundary mx-2">Registrarse</a>
+        </div>
+    </div>
+
+{%endblock%}
